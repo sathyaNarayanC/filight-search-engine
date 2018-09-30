@@ -1,0 +1,7 @@
+#side-bar{
+    flex: 31%;
+}
+
+#display-area{
+    flex: 69%;
+}

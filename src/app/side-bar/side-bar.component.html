@@ -1,0 +1,72 @@
+<div style="width:100%;height:87%;border:1px solid black;">
+    
+  <div class="tab">
+    <button class="tablinks active" (click)="openTrip(event, 'OneWay')">OneWay</button>
+    <button class="tablinks" (click)="openTrip(event, 'Return')">Return</button>
+  </div>
+
+  <!-- Tab content -->
+  <div id="OneWay" class="tabcontent" style="display:block;">
+    <form id="flightDetails" #formDatas="ngForm">
+        <label > Origin City </label><br>
+        <select name="originCity" required ngModel>
+            <option name="originCity" value="Chennai">Chennai</option>
+            <option name="originCity" value="Bengaluru">Bengaluru</option>
+            <option name="originCity" value="Mumbai">Mumbai</option>
+            <option name="originCity" value="Delhi">Delhi</option>
+          </select><br>
+
+      <label > Destination City </label><br>
+        <select name="destinationCity" required ngModel>
+            <option name="destinationCity" value="Chennai">Chennai</option>
+            <option name="destinationCity" value="Bengaluru">Bengaluru</option>
+            <option name="destinationCity" value="Mumbai">Mumbai</option>
+            <option name="destinationCity" value="Delhi">Delhi</option>
+          </select><br>
+
+      <label for="departure">Departure Date</label><br>
+      <input type="date" id="departure" name="departureDate" min="2018-01-01" max="2018-12-31" required ngModel><br>
+
+      <input type="text" name="noOfPass" placeholder="Enter number of passengers" required ngModel><br>
+
+      <input type="submit" (click)="onClick(formDatas)">
+    </form>
+  </div>
+
+  <div id="Return" class="tabcontent">
+      <form id="flightDetailss" #formData="ngForm">
+          <label > Origin City </label><br>
+        <select name="originCity" required ngModel>
+            <option name="originCity" value="Chennai">Chennai</option>
+            <option name="originCity" value="Bengaluru">Bengaluru</option>
+            <option name="originCity" value="Mumbai">Mumbai</option>
+            <option name="originCity" value="Delhi">Delhi</option>
+          </select><br>
+
+      <label > Destination City </label><br>
+        <select name="destinationCity" required ngModel>
+            <option name="destinationCity" value="Chennai">Chennai</option>
+            <option name="destinationCity" value="Bengaluru">Bengaluru</option>
+            <option name="destinationCity" value="Mumbai">Mumbai</option>
+            <option name="destinationCity" value="Delhi">Delhi</option>
+          </select><br>
+    
+          <label for="departure">Departure Date</label><br>
+          <input type="date" name="departureDate" min="2018-01-01" max="2018-12-31" ngModel><br>
+
+          <label for="return">Return Date</label><br>
+          <input type="date" id="return" name="returnDate" min="2018-01-01" max="2018-12-31" ngModel><br>
+    
+          <input type="text" name="noOfPass" placeholder="Enter number of passengers" ngModel><br>
+    
+          <input type="submit" (click)="onClick(formData)">
+        </form> 
+  </div>
+  <!--
+  <div data-role="rangeslider" style="border:1px solid black;width:50%;margin-left: 20%" align="center">
+
+    <label for="price-max">Refine Flight Search</label><br>
+    <input type="range" name="price-max" id="price-max" value="800" min="0" max="1000">
+  </div>
+  -->
+  </div>

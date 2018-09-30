@@ -1,0 +1,8 @@
+#result-div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #result-div > div {
+    flex: auto;
+  }

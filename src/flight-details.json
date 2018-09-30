@@ -1,0 +1,20 @@
+[
+	{"flightname":"PD-101","origin_city":"Chennai","destination_city":"Mumbai","price":"9000","depart_time":"10.00 AM","Arrive_time":"1.00 PM"},
+	{"flight_name":"PD-102","origin_city":"Mumbai","destination_city":"Chennai","price":"9000","depart_time":"8.00 PM","Arrive_time":"11.00 PM"},
+	{"flight_name":"PD-103","origin_city":"Mumbai","destination_city":"Delhi","price":"9000","depart_time":"10.00 AM","Arrive_time":"1.00 PM"},
+	{"flight_name":"PD-104","origin_city":"Delhi","destination_city":"Mumbai","price":"9000","depart_time":"8.00 PM","Arrive_time":"11.00 PM"},
+	{"flight_name":"PD-105","origin_city":"Delhi","destination_city":"Bengaluru","price":"9000","depart_time":"10.00 AM","Arrive_time":"1.00 PM"},
+	{"flight_name":"PD-106","origin_city":"Bengaluru","destination_city":"Delhi","price":"9000","depart_time":"8.00 PM","Arrive_time":"11.00 PM"},
+	{"flight_name":"PD-107","origin_city":"Chennai","destination_city":"Mumbai","price":"10000","depart_time":"10.00 AM","Arrive_time":"12.00 PM"},
+	{"flight_name":"PD-108","origin_city":"Mumbai","destination_city":"Chennai","price":"10000","depart_time":"8.00 PM","Arrive_time":"10.00 PM"},
+	{"flight_name":"PD-109","origin_city":"Mumbai","destination_city":"Delhi","price":"10000","depart_time":"10.00 AM","Arrive_time":"12.00 PM"},
+	{"flight_name":"PD-110","origin_city":"Delhi","destination_city":"Mumbai","price":"10000","depart_time":"8.00 PM","Arrive_time":"10.00 PM"},
+	{"flight_name":"PD-111","origin_city":"Delhi","destination_city":"Bengaluru","price":"10000","depart_time":"10.00 AM","Arrive_time":"12.00 PM"},
+	{"flight_name":"PD-112","origin_city":"Bengaluru","destination_city":"Delhi","price":"10000","depart_time":"8.00 PM","Arrive_time":"10.00 PM"},	
+	{"flight_name":"PD-113","origin_city":"Chennai","destination_city":"Mumbai","price":"11000","depart_time":"11.00 AM","Arrive_time":"12.30 PM"},
+	{"flight_name":"PD-114","origin_city":"Mumbai","destination_city":"Chennai","price":"11000","depart_time":"9.00 PM","Arrive_time":"10.30 PM"},
+	{"flight_name":"PD-115","origin_city":"Mumbai","destination_city":"Delhi","price":"11000","depart_time":"9.00 AM","Arrive_time":"12.30 PM"},
+	{"flight_name":"PD-116","origin_city":"Delhi","destination_city":"Mumbai","price":"11000","depart_time":"7.00 PM","Arrive_time":"10.30 PM"},
+	{"flight_name":"PD-117","origin_city":"Delhi","destination_city":"Bengaluru","price":"11000","depart_time":"9.00 AM","Arrive_time":"12.30 PM"},
+	{"flight_name":"PD-118","origin_city":"Bengaluru","destination_city":"Delhi","price":"11000","depart_time":"7.00 PM","Arrive_time":"10.30 PM"}
+]	

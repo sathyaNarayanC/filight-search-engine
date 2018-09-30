@@ -1,0 +1,35 @@
+<div id="display-area-div" style="display: flex;flex-direction: column;height: 87%;visibility: hidden;;">
+  <div style="flex:15%;border:1px solid black;float:left;">
+    <div>
+      <span style="font-size: 45px;float: left;margin: 10px;">{{formDatas.value.originCity}} >> {{formDatas.value.destinationCity}}  <span *ngIf="returnFlag">{{">>" + formDatas.value.originCity}}</span></span>
+      <span style="float: right;margin: 25px;">{{"Depart:" + formDatas.value.departureDate}}<br/>
+        <span *ngIf="returnFlag">{{"Return:" + formDatas.value.returnDate}} </span>  </span>
+    </div>
+  </div>
+  <h1 *ngIf="noDataFlag"> {{noData}}</h1>
+  <div style="flex:85%">
+      <div id="result-div">
+        <div *ngFor="let data of originArr; let i = index" [attr.data-index]="i">
+          <div  style="display: flex; flex-direction: row;border:1px solid black;margin-bottom:10px;margin-top:10px;">
+            <div style="flex:auto;">
+              <p style="line-height: 10px;"> Rs : {{originArr[i].price}}</p>
+              <p style="line-height: 10px;"> {{originArr[i].flightname}}</p>
+              <p style="line-height: 10px;"> {{originArr[i].origin_city +" >>"+ originArr[i].destination_city}}</p>
+              <p style="line-height: 10px;">Depart : {{originArr[i].depart_time}} </p>
+              <p style="line-height: 10px;">Arrive: {{originArr[i].Arrive_time}}</p>
+            </div>
+
+            <div *ngIf="returnFlag" style="flex:auto;">
+                <p style="line-height: 10px;"> Rs : {{destinationArr[i].price}}</p>
+                <p style="line-height: 10px;"> {{destinationArr[i].flightname}}</p>
+                <p style="line-height: 10px;"> {{destinationArr[i].origin_city +" >>"+ destinationArr[i].destination_city}}</p>
+                <p style="line-height: 10px;">Depart : {{destinationArr[i].depart_time}} </p>
+                <p style="line-height: 10px;">Arrive: {{destinationArr[i].Arrive_time}}</p>
+            </div>
+
+            <div style="flex:auto;margin-top: 50px;"> <button>Book Flight</button></div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
